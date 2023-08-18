@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+    <style>
+        /* Apply a CSS grid with three columns for the 3 side-by-side divs */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            margin-top: 10%;
+            text-align: center;
+        }
+
+        h1, h3, figcaption {
+            color: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        h3 {
+            text-align: center;
+            font-style: italic;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 0.75em;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-gallery">
+        <!-- Image 1 -->
+        <figure>
+            <img src="image1.jpg" alt="Image 1">
+            <figcaption>Title 1</figcaption>
+        </figure>
+
+        <!-- Image 2 -->
+        <figure>
+            <img src="image2.jpg" alt="Image 2">
+            <figcaption>Title 2</figcaption>
+        </figure>
+
+        <!-- Image 3 -->
+        <figure>
+            <img src="image3.jpg" alt="Image 3">
+            <figcaption>Title 3</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
